@@ -14,10 +14,11 @@
 <body>
 
 <header>
-    <div class="container">
+
         <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="./assets/img/dark-logo.png" class="d-inline-block align-top logo" alt="">
+                <img src="./assets/img/dark-logo.png" class="align-top logo" alt="">
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,42 +28,42 @@
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="dropdown" href="#">Про нас</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Наші роботи</a>
+                            <a class="dropdown-item" href="#about-us">Наші роботи</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Відгуки</a>
+                            <a class="dropdown-item" href="#review">Відгуки</a>
 
                         </div>
                     </li>
                     <li class="nav-item" >
-                        <a class="nav-link" href="#">Ворота</a>
+                        <a class="nav-link" href="#brama">Ворота</a>
                     </li>
 
                     <li class="nav-item" >
-                        <a class="nav-link" href="#">Ролети</a>
+                        <a class="nav-link" href="#rolet">Ролети</a>
                     </li>
                     <li class="nav-item" >
                         <a class="nav-link" href="#">Автоматика</a>
                     </li>
                     <li class="nav-item" >
-                        <a class="nav-link" href="#">Монтаж</a>
+                        <a class="nav-link" href="#montash">Монтаж</a>
                     </li>
                     <li class="nav-item" >
-                        <a class="nav-link" href="#">Доставка</a>
+                        <a class="nav-link" href="#delivery">Доставка</a>
                     </li>
                     <li class="nav-item" >
-                        <a class="nav-link" href="#">Контакти</a>
+                        <a class="nav-link" href="#contact">Контакти</a>
                     </li>
 
                 </ul>
                 <form class="form-inline d-flex justify-content-center">
                     <button data-toggle="modal" data-target="#exampleModalCenter"
-                            class="btn btn-border-calc pl-lg-5 pr-lg-5 pl-md-1 pr-md-1"
+                            class="btn btn-bg-border btn-border-calc pl-lg-5 pr-lg-5 pl-md-1 pr-md-1"
                             >Отримати розрахунок</button>
                 </form>
             </div>
-
+            </div>
         </nav>
-    </div>
+
 </header>
 <section class="slider">
     <div id="sliderGeneral" class="carousel slide" data-ride="carousel">
@@ -73,33 +74,33 @@
             </ol>
 
         <div class="carousel-inner">
-           <div class="carousel-item active height position-relative">
-                <div class="first-slider d-flex w-100" >
-                    <div class="container d-flex flex-column">
+           <div class="carousel-item active">
+                <div class="first-slider d-flex" >
+                    <div class="container pt-5 position-relative">
                         <div class="d-flex flex-column" style="margin-top: 10%;">
-                            <div class="row position-relative mb-5 align-items-center">
+                            <div class="position-relative mb-5 d-flex align-items-center">
                                 <div class="rectangle-br position-absolute"></div>
                                 <h2 class="ml-5">Наші партнери</h2>
                             </div>
-                            <div class="row mt-md-5 mt-0">
+                            <div class="mt-md-5 pt-5 mt-0 d-flex flex-row justify-content-between">
                                 <img src="assets/img/logo/alutex.png" alt="" class="col-lg-3 col-md-8 col-12 slider-logo">
-                                <img src="assets/img/logo/krispol.png" alt="" class="col-lg-3 col-md-8 mt-1 col-12 mt-md-2 ml-md-auto mt-lg-5 slider-logo">
-                                <img src="assets/img/logo/gant.jpg" alt="" class="col-lg-3 col-md-8 mt-1 col-12 mt-md-2 mt-lg-0 ml-lg-auto slider-logo">
+                                <img src="assets/img/logo/krispol.png" alt="" class="col-lg-3 col-md-8 mt-1 col-12 mt-md-2 mt-lg-5 slider-logo">
+                                <img src="assets/img/logo/gant.jpg" alt="" class="col-lg-3 col-md-8 mt-1 col-12 mt-md-2 mt-lg-0 slider-logo">
                             </div>
 
                         </div>
-                        <div class="d-flex align-items-end w-100 justify-content-center mt-auto" style="margin-bottom: 10px;">
-                            <svg class="" width="43" height="24" viewBox="0 0 43 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="row position-absolute d-flex justify-content-center" style="bottom: 10px; left:50%">
+                            <a href="#about-us">
+                                <svg class="d-flex" width="43" height="24" viewBox="0 0 43 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.5594 22.5716L41.4911 3.63364C42.32 2.80266 42.32 1.45633 41.4911 0.62324C40.6622 -0.207747 39.3159 -0.207747 38.487 0.62324L21.0575 18.0591L3.6279 0.625337C2.79901 -0.20565 1.45268 -0.20565 0.621689 0.625337C-0.207199 1.45632 -0.207199 2.80475 0.621689 3.63574L19.5534 22.5737C20.3737 23.3921 21.7412 23.3921 22.5594 22.5716Z" fill="#FFD008"/>
                             </svg>
+                            </a>
                         </div>
-
                     </div>
                 </div>
 
-            </div>
-
-            <div class="carousel-item height position-relative">
+           </div>
+            <div class="carousel-item position-relative">
                 <div class="second-slider w-100">
                     <div class="container d-flex flex-column">
                         <div class="d-flex flex-column" style="margin-top: 10%;">
@@ -122,6 +123,7 @@
 
                 </div>
             </div>
+            <!--
             <div class="carousel-item position-relative">
                 <div class="thort-slider d-block w-100">
                     <div class="container">
@@ -129,15 +131,16 @@
                     </div>
                 </div>
             </div>
+            -->
         </div>
 
     </div>
 </section>
 <section class="position-relative bg-3">
-    <div class="contact h-100 w-100"></div>
+    <div class="contact"></div>
     <div class="container pt-5">
         <div class="d-flex flex-column">
-            <h3>Про компанію</h3>
+            <h3 id="about-us">Про компанію</h3>
             <p class="mt-3">Вам потрібні гаражні ворота? Чи можливо Вас цікавлять розпашні та відкатні ворота?
                 А можливо Ви бажаєте встановити захисні ролети?
                 <br>
@@ -228,6 +231,7 @@
                                 </linearGradient>
                             </defs>
                         </svg>
+
 
                     </div>
                     <div class="text-rig d-flex align-items-center p-4">
@@ -392,7 +396,7 @@
     <div class="container pt-5 pb-5">
         <div class="d-flex flex-column">
             <div class="row">
-                <h3>Секційні ворота</h3>
+                <h3 id="brama">Секційні ворота</h3>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-6 col-md-12">
@@ -403,7 +407,7 @@
                         </div>
                     </div>
                     <div class="row mb-5 mt-5">
-                        <img class="brow-st-1 w-100" src="assets/img/brama/visual.jpg" id="brow-st">
+                        <img class="brow-st-1" src="assets/img/brama/visual.jpg" id="brow-st">
                     </div>
                     <div class="row mt-5 mb-5 align-items-center">
                         <div class="slid-text">Виробник:</div>
@@ -416,7 +420,7 @@
                 </div>
                 <div class="col-12 col-lg-5 col-md-12 ml-md-0 ml-lg-5">
                     <div class="row justify-content-center">
-                        <button class="btn btn-border-calc btn-get-calc pl-5 pr-5" type="submit">Розрахунок</button>
+                        <div class="btn-border-calc btn-get-calc pl-5 pr-5">Розрахунок</div>
                     </div>
                     <div class="mt-5 row d-flex">
                         <div class="slid-text col-2 mt-3">КОЛІР:</div>
@@ -468,14 +472,14 @@
                     <div class="row mt-4">
                         <div class="col-6">
                             <div class="slid-text">ТИП УПРАВЛІННЯ:</div>
-                            <div class="mt-1 d-flex justify-content-between slid-container">
+                            <div class="mt-1 d-flex justify-content-between slid-container text-dark-imp">
                                 <button class="slid-btn slid-active">автоматика</button>
                                 <button class="slid-btn slid-not-active">ручне</button>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="slid-text">ДОДАТКОВИЙ ВХІД:</div>
-                            <div class="mt-1 d-flex justify-content-between slid-container w-btn">
+                            <div class="mt-1 d-flex justify-content-between slid-container w-btn text-dark-imp">
                                 <button class="slid-btn slid-not-active">ТАК</button>
                                 <button class="slid-btn slid-active">НІ</button>
                             </div>
@@ -487,7 +491,7 @@
                             <div class="mt-1 d-flex align-items-center justify-content-between slid-btn-container">
                                 <button class="slid-s-btn" onclick="minusValueToText('widthProem')">-</button>
                                 <div class="slid-center-text d-flex flex-row justify-content-center">
-                                    <input readonly  type="text" class="inp" id="widthProem" value="300">
+                                    <input type="number" class="inp" id="widthProem" value="300">
                                     <sup>см</sup>
                                 </div>
                                 <button class="slid-s-btn active" onclick="addValueToText('widthProem')">+</button>
@@ -498,7 +502,7 @@
                             <div class="mt-1 d-flex align-items-center justify-content-between slid-btn-container">
                                 <button class="slid-s-btn" onclick="minusValueToText('heightProem')">-</button>
                                 <div class="slid-center-text d-flex flex-row justify-content-center">
-                                    <input readonly  type="text" class="inp" id="heightProem" value="300">
+                                    <input type="number" class="inp" id="heightProem" value="300">
                                     <sup>см</sup>
                                 </div>
                                 <button class="slid-s-btn active" onclick="addValueToText('heightProem')">+</button>
@@ -513,7 +517,7 @@
 
                                 <button class="slid-s-btn" onclick="minusValueToText('peremProem')">-</button>
                                 <div class="slid-center-text d-flex flex-row justify-content-center">
-                                    <input readonly  type="text" class="inp" id="peremProem" value="300">
+                                    <input type="number" class="inp" id="peremProem" value="300">
                                     <sup>см</sup>
                                 </div>
                                 <button class="slid-s-btn active" onclick="addValueToText('peremProem')">+</button>
@@ -525,7 +529,7 @@
                             <div class="mt-1 d-flex align-items-center justify-content-between slid-btn-container">
                                 <button class="slid-s-btn" onclick="minusValueToText('deepProem')">-</button>
                                 <div class="slid-center-text d-flex flex-row justify-content-center">
-                                    <input readonly  type="text" class="inp" id="deepProem" value="300">
+                                    <input type="number" class="inp" id="deepProem" value="300">
                                     <sup>см</sup>
                                 </div>
                                 <button class="slid-s-btn active" onclick="addValueToText('deepProem')">+</button>
@@ -540,7 +544,7 @@
                             <div class="mt-1 d-flex align-items-center justify-content-between slid-btn-container">
                                 <button class="slid-s-btn" onclick="minusValueToText('marginleftProem')">-</button>
                                 <div class="slid-center-text d-flex flex-row justify-content-center">
-                                    <input readonly  type="text" class="inp" id="marginleftProem" value="300">
+                                    <input type="number" class="inp" id="marginleftProem" value="300">
                                     <sup>см</sup>
                                 </div>
                                 <button class="slid-s-btn active" onclick="addValueToText('marginleftProem')">+</button>
@@ -552,7 +556,7 @@
                             <div class="mt-1 d-flex align-items-center justify-content-between slid-btn-container">
                                 <button class="slid-s-btn" onclick="minusValueToText('marginRightProem')">-</button>
                                 <div class="slid-center-text d-flex flex-row justify-content-center">
-                                    <input readonly  type="text" class="inp" id="marginRightProem" value="300">
+                                    <input type="number" class="inp" id="marginRightProem" value="300">
                                     <sup>см</sup>
                                 </div>
                                 <button class="slid-s-btn active" onclick="addValueToText('marginRightProem')">+</button>
@@ -576,7 +580,7 @@
     <div class="container pt-5 pb-5">
         <div class="d-flex flex-column">
             <div class="row">
-                <h3>Захисні ролети</h3>
+                <h3 id="rolet">Захисні ролети</h3>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-6 col-md-12">
@@ -587,7 +591,7 @@
                         </div>
                     </div>
                     <div class="row mb-5 mt-5">
-                        <img class="brow-st-1 w-100" src="assets/img/brama/rolet.png" id="rolet-st">
+                        <img class="brow-st-1" src="assets/img/brama/rolet.png" id="rolet-st">
                     </div>
                     <div class="row mt-5 mb-5 align-items-center">
                         <div class="slid-text">Виробник:</div>
@@ -660,7 +664,7 @@
                             <div class="mt-1 d-flex align-items-center justify-content-between slid-btn-container">
                                 <button class="slid-s-btn" onclick="minusValueToText('widthProemRolet')">-</button>
                                 <div class="slid-center-text d-flex flex-row justify-content-center">
-                                    <input readonly  type="text" class="inp" id="widthProemRolet" value="300">
+                                    <input  type="number" class="inp" id="widthProemRolet" value="300">
                                     <sup>см</sup>
                                 </div>
                                 <button class="slid-s-btn active" onclick="addValueToText('widthProemRolet')">+</button>
@@ -671,7 +675,7 @@
                             <div class="mt-1 d-flex align-items-center justify-content-between slid-btn-container">
                                 <button class="slid-s-btn" onclick="minusValueToText('heightProemRolet')">-</button>
                                 <div class="slid-center-text d-flex flex-row justify-content-center">
-                                    <input readonly  type="text" class="inp" id="heightProemRolet" value="300">
+                                    <input type="number" class="inp" id="heightProemRolet" value="300">
                                     <sup>см</sup>
                                 </div>
                                 <button class="slid-s-btn active" onclick="addValueToText('heightProemRolet')">+</button>
@@ -703,7 +707,7 @@
     <div class="container pt-5 pb-5">
         <div class="d-flex flex-column">
             <div class="row">
-                <h3>Відгуки</h3>
+                <h3 id="review">Відгуки</h3>
             </div>
             <div class="row justify-content-center p-5">
                     <div class="col-3 card card-body justify-content-center align-items-center">
@@ -767,7 +771,7 @@
 <section class="bg-6" >
     <div class="container position-relative pt-5 pb-5">
             <div class="row">
-                <h3 class="col-12">Монтаж</h3>
+                <h3 id="montash" class="col-12">Монтаж</h3>
                 <ul class="montash-ul mt-3">
                     <li class="montash-ul-item">
                         <div class="elipse"></div>Монтаж по всій Україні</li>
@@ -805,7 +809,7 @@
     <div class="container position-relative pb-5">
         <div class="row">
             <div class="flex flex-row col-8">
-                <h3>Доставка і оплата</h3>
+                <h3 id="delivery">Доставка і оплата</h3>
                 <div class="flex flex-row p-2">
                     <h4>Оплата</h4>
                     <div class="ml-3">
@@ -846,7 +850,7 @@
                 </div>
                 <div class="liner mt-3"></div>
                 <div class="flex flex-row p-2 mt-3">
-                    <h4>Доставка</h4>
+                    <h4 >Доставка</h4>
                     <div class="ml-3">
                         <div class="row mt-3">
                             <div class="delivery-icon col-4">
@@ -891,7 +895,7 @@
     <div class="container flex align-items-center pt-5 pb-5">
             <div class="row">
                 <div class="col-6 row">
-                    <h3>Контакти</h3>
+                    <h3 id="contact">Контакти</h3>
                     <div class="col-12 mt-2">
                         <div class="row mt-3">
                             <div class="d-flex">

@@ -1,9 +1,659 @@
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-Medium.eot');
+    src: local('Mazzard M Medium'), local('MazzardM-Medium'),
+    url('font/MazzardM-Medium.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-Medium.woff2') format('woff2'),
+    url('font/MazzardM-Medium.woff') format('woff'),
+    url('font/MazzardM-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-ExtraLightItalic.eot');
+    src: local('Mazzard M ExtraLight Italic'), local('MazzardM-ExtraLightItalic'),
+    url('font/MazzardM-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-ExtraLightItalic.woff2') format('woff2'),
+    url('font/MazzardM-ExtraLightItalic.woff') format('woff'),
+    url('font/MazzardM-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-BlackItalic.eot');
+    src: local('Mazzard H Black Italic'), local('MazzardH-BlackItalic'),
+    url('font/MazzardH-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-BlackItalic.woff2') format('woff2'),
+    url('font/MazzardH-BlackItalic.woff') format('woff'),
+    url('font/MazzardH-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-ExtraBold.eot');
+    src: local('Mazzard L ExtraBold'), local('MazzardL-ExtraBold'),
+    url('font/MazzardL-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-ExtraBold.woff2') format('woff2'),
+    url('font/MazzardL-ExtraBold.woff') format('woff'),
+    url('font/MazzardL-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-Black.eot');
+    src: local('Mazzard H Black'), local('MazzardH-Black'),
+    url('font/MazzardH-Black.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-Black.woff2') format('woff2'),
+    url('font/MazzardH-Black.woff') format('woff'),
+    url('font/MazzardH-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-BoldItalic.eot');
+    src: local('Mazzard M Bold Italic'), local('MazzardM-BoldItalic'),
+    url('font/MazzardM-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-BoldItalic.woff2') format('woff2'),
+    url('font/MazzardM-BoldItalic.woff') format('woff'),
+    url('font/MazzardM-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-Medium.eot');
+    src: local('Mazzard H Medium'), local('MazzardH-Medium'),
+    url('font/MazzardH-Medium.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-Medium.woff2') format('woff2'),
+    url('font/MazzardH-Medium.woff') format('woff'),
+    url('font/MazzardH-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-Light.eot');
+    src: local('Mazzard M Light'), local('MazzardM-Light'),
+    url('font/MazzardM-Light.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-Light.woff2') format('woff2'),
+    url('font/MazzardM-Light.woff') format('woff'),
+    url('font/MazzardM-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-LightItalic.eot');
+    src: local('Mazzard H Light Italic'), local('MazzardH-LightItalic'),
+    url('font/MazzardH-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-LightItalic.woff2') format('woff2'),
+    url('font/MazzardH-LightItalic.woff') format('woff'),
+    url('font/MazzardH-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-ExtraLight.eot');
+    src: local('Mazzard H ExtraLight'), local('MazzardH-ExtraLight'),
+    url('font/MazzardH-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-ExtraLight.woff2') format('woff2'),
+    url('font/MazzardH-ExtraLight.woff') format('woff'),
+    url('font/MazzardH-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-Bold.eot');
+    src: local('Mazzard M Bold'), local('MazzardM-Bold'),
+    url('font/MazzardM-Bold.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-Bold.woff2') format('woff2'),
+    url('font/MazzardM-Bold.woff') format('woff'),
+    url('font/MazzardM-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-SemiBoldItalic.eot');
+    src: local('Mazzard M SemiBold Italic'), local('MazzardM-SemiBoldItalic'),
+    url('font/MazzardM-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-SemiBoldItalic.woff2') format('woff2'),
+    url('font/MazzardM-SemiBoldItalic.woff') format('woff'),
+    url('font/MazzardM-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-ExtraLight.eot');
+    src: local('Mazzard L ExtraLight'), local('MazzardL-ExtraLight'),
+    url('font/MazzardL-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-ExtraLight.woff2') format('woff2'),
+    url('font/MazzardL-ExtraLight.woff') format('woff'),
+    url('font/MazzardL-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-Light.eot');
+    src: local('Mazzard H Light'), local('MazzardH-Light'),
+    url('font/MazzardH-Light.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-Light.woff2') format('woff2'),
+    url('font/MazzardH-Light.woff') format('woff'),
+    url('font/MazzardH-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-ThinItalic.eot');
+    src: local('Mazzard L Thin Italic'), local('MazzardL-ThinItalic'),
+    url('font/MazzardL-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-ThinItalic.woff2') format('woff2'),
+    url('font/MazzardL-ThinItalic.woff') format('woff'),
+    url('font/MazzardL-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-ExtraBoldItalic.eot');
+    src: local('Mazzard H ExtraBold Italic'), local('MazzardH-ExtraBoldItalic'),
+    url('font/MazzardH-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-ExtraBoldItalic.woff2') format('woff2'),
+    url('font/MazzardH-ExtraBoldItalic.woff') format('woff'),
+    url('font/MazzardH-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-SemiBold.eot');
+    src: local('Mazzard M SemiBold'), local('MazzardM-SemiBold'),
+    url('font/MazzardM-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-SemiBold.woff2') format('woff2'),
+    url('font/MazzardM-SemiBold.woff') format('woff'),
+    url('font/MazzardM-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-Regular.eot');
+    src: local('Mazzard L Regular'), local('MazzardL-Regular'),
+    url('font/MazzardL-Regular.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-Regular.woff2') format('woff2'),
+    url('font/MazzardL-Regular.woff') format('woff'),
+    url('font/MazzardL-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-MediumItalic.eot');
+    src: local('Mazzard H Medium Italic'), local('MazzardH-MediumItalic'),
+    url('font/MazzardH-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-MediumItalic.woff2') format('woff2'),
+    url('font/MazzardH-MediumItalic.woff') format('woff'),
+    url('font/MazzardH-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-Italic.eot');
+    src: local('Mazzard L Italic'), local('MazzardL-Italic'),
+    url('font/MazzardL-Italic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-Italic.woff2') format('woff2'),
+    url('font/MazzardL-Italic.woff') format('woff'),
+    url('font/MazzardL-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-ExtraBoldItalic.eot');
+    src: local('Mazzard L ExtraBold Italic'), local('MazzardL-ExtraBoldItalic'),
+    url('font/MazzardL-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-ExtraBoldItalic.woff2') format('woff2'),
+    url('font/MazzardL-ExtraBoldItalic.woff') format('woff'),
+    url('font/MazzardL-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-Bold.eot');
+    src: local('Mazzard L Bold'), local('MazzardL-Bold'),
+    url('font/MazzardL-Bold.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-Bold.woff2') format('woff2'),
+    url('font/MazzardL-Bold.woff') format('woff'),
+    url('font/MazzardL-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-BlackItalic.eot');
+    src: local('Mazzard M Black Italic'), local('MazzardM-BlackItalic'),
+    url('font/MazzardM-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-BlackItalic.woff2') format('woff2'),
+    url('font/MazzardM-BlackItalic.woff') format('woff'),
+    url('font/MazzardM-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-MediumItalic.eot');
+    src: local('Mazzard L Medium Italic'), local('MazzardL-MediumItalic'),
+    url('font/MazzardL-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-MediumItalic.woff2') format('woff2'),
+    url('font/MazzardL-MediumItalic.woff') format('woff'),
+    url('font/MazzardL-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-ExtraBoldItalic.eot');
+    src: local('Mazzard M ExtraBold Italic'), local('MazzardM-ExtraBoldItalic'),
+    url('font/MazzardM-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-ExtraBoldItalic.woff2') format('woff2'),
+    url('font/MazzardM-ExtraBoldItalic.woff') format('woff'),
+    url('font/MazzardM-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-Regular.eot');
+    src: local('Mazzard M Regular'), local('MazzardM-Regular'),
+    url('font/MazzardM-Regular.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-Regular.woff2') format('woff2'),
+    url('font/MazzardM-Regular.woff') format('woff'),
+    url('font/MazzardM-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-Italic.eot');
+    src: local('Mazzard H Italic'), local('MazzardH-Italic'),
+    url('font/MazzardH-Italic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-Italic.woff2') format('woff2'),
+    url('font/MazzardH-Italic.woff') format('woff'),
+    url('font/MazzardH-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-LightItalic.eot');
+    src: local('Mazzard M Light Italic'), local('MazzardM-LightItalic'),
+    url('font/MazzardM-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-LightItalic.woff2') format('woff2'),
+    url('font/MazzardM-LightItalic.woff') format('woff'),
+    url('font/MazzardM-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-LightItalic.eot');
+    src: local('Mazzard L Light Italic'), local('MazzardL-LightItalic'),
+    url('font/MazzardL-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-LightItalic.woff2') format('woff2'),
+    url('font/MazzardL-LightItalic.woff') format('woff'),
+    url('font/MazzardL-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-Italic.eot');
+    src: local('Mazzard M Italic'), local('MazzardM-Italic'),
+    url('font/MazzardM-Italic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-Italic.woff2') format('woff2'),
+    url('font/MazzardM-Italic.woff') format('woff'),
+    url('font/MazzardM-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-Thin.eot');
+    src: local('Mazzard H Thin'), local('MazzardH-Thin'),
+    url('font/MazzardH-Thin.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-Thin.woff2') format('woff2'),
+    url('font/MazzardH-Thin.woff') format('woff'),
+    url('font/MazzardH-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-SemiBoldItalic.eot');
+    src: local('Mazzard H SemiBold Italic'), local('MazzardH-SemiBoldItalic'),
+    url('font/MazzardH-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-SemiBoldItalic.woff2') format('woff2'),
+    url('font/MazzardH-SemiBoldItalic.woff') format('woff'),
+    url('font/MazzardH-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-BoldItalic.eot');
+    src: local('Mazzard L Bold Italic'), local('MazzardL-BoldItalic'),
+    url('font/MazzardL-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-BoldItalic.woff2') format('woff2'),
+    url('font/MazzardL-BoldItalic.woff') format('woff'),
+    url('font/MazzardL-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-ThinItalic.eot');
+    src: local('Mazzard H Thin Italic'), local('MazzardH-ThinItalic'),
+    url('font/MazzardH-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-ThinItalic.woff2') format('woff2'),
+    url('font/MazzardH-ThinItalic.woff') format('woff'),
+    url('font/MazzardH-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-ExtraLight.eot');
+    src: local('Mazzard M ExtraLight'), local('MazzardM-ExtraLight'),
+    url('font/MazzardM-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-ExtraLight.woff2') format('woff2'),
+    url('font/MazzardM-ExtraLight.woff') format('woff'),
+    url('font/MazzardM-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-Light.eot');
+    src: local('Mazzard L Light'), local('MazzardL-Light'),
+    url('font/MazzardL-Light.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-Light.woff2') format('woff2'),
+    url('font/MazzardL-Light.woff') format('woff'),
+    url('font/MazzardL-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-Bold.eot');
+    src: local('Mazzard H Bold'), local('MazzardH-Bold'),
+    url('font/MazzardH-Bold.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-Bold.woff2') format('woff2'),
+    url('font/MazzardH-Bold.woff') format('woff'),
+    url('font/MazzardH-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-Medium.eot');
+    src: local('Mazzard L Medium'), local('MazzardL-Medium'),
+    url('font/MazzardL-Medium.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-Medium.woff2') format('woff2'),
+    url('font/MazzardL-Medium.woff') format('woff'),
+    url('font/MazzardL-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-MediumItalic.eot');
+    src: local('Mazzard M Medium Italic'), local('MazzardM-MediumItalic'),
+    url('font/MazzardM-MediumItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-MediumItalic.woff2') format('woff2'),
+    url('font/MazzardM-MediumItalic.woff') format('woff'),
+    url('font/MazzardM-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-Thin.eot');
+    src: local('Mazzard L Thin'), local('MazzardL-Thin'),
+    url('font/MazzardL-Thin.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-Thin.woff2') format('woff2'),
+    url('font/MazzardL-Thin.woff') format('woff'),
+    url('font/MazzardL-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-ExtraBold.eot');
+    src: local('Mazzard M ExtraBold'), local('MazzardM-ExtraBold'),
+    url('font/MazzardM-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-ExtraBold.woff2') format('woff2'),
+    url('font/MazzardM-ExtraBold.woff') format('woff'),
+    url('font/MazzardM-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-Black.eot');
+    src: local('Mazzard M Black'), local('MazzardM-Black'),
+    url('font/MazzardM-Black.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-Black.woff2') format('woff2'),
+    url('font/MazzardM-Black.woff') format('woff'),
+    url('font/MazzardM-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-Black.eot');
+    src: local('Mazzard L Black'), local('MazzardL-Black'),
+    url('font/MazzardL-Black.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-Black.woff2') format('woff2'),
+    url('font/MazzardL-Black.woff') format('woff'),
+    url('font/MazzardL-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-ThinItalic.eot');
+    src: local('Mazzard M Thin Italic'), local('MazzardM-ThinItalic'),
+    url('font/MazzardM-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-ThinItalic.woff2') format('woff2'),
+    url('font/MazzardM-ThinItalic.woff') format('woff'),
+    url('font/MazzardM-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-SemiBold.eot');
+    src: local('Mazzard L SemiBold'), local('MazzardL-SemiBold'),
+    url('font/MazzardL-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-SemiBold.woff2') format('woff2'),
+    url('font/MazzardL-SemiBold.woff') format('woff'),
+    url('font/MazzardL-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-SemiBoldItalic.eot');
+    src: local('Mazzard L SemiBold Italic'), local('MazzardL-SemiBoldItalic'),
+    url('font/MazzardL-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-SemiBoldItalic.woff2') format('woff2'),
+    url('font/MazzardL-SemiBoldItalic.woff') format('woff'),
+    url('font/MazzardL-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard M';
+    src: url('font/MazzardM-Thin.eot');
+    src: local('Mazzard M Thin'), local('MazzardM-Thin'),
+    url('font/MazzardM-Thin.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardM-Thin.woff2') format('woff2'),
+    url('font/MazzardM-Thin.woff') format('woff'),
+    url('font/MazzardM-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-Regular.eot');
+    src: local('Mazzard H Regular'), local('MazzardH-Regular'),
+    url('font/MazzardH-Regular.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-Regular.woff2') format('woff2'),
+    url('font/MazzardH-Regular.woff') format('woff'),
+    url('font/MazzardH-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-ExtraLightItalic.eot');
+    src: local('Mazzard L ExtraLight Italic'), local('MazzardL-ExtraLightItalic'),
+    url('font/MazzardL-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-ExtraLightItalic.woff2') format('woff2'),
+    url('font/MazzardL-ExtraLightItalic.woff') format('woff'),
+    url('font/MazzardL-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-SemiBold.eot');
+    src: local('Mazzard H SemiBold'), local('MazzardH-SemiBold'),
+    url('font/MazzardH-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-SemiBold.woff2') format('woff2'),
+    url('font/MazzardH-SemiBold.woff') format('woff'),
+    url('font/MazzardH-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-BoldItalic.eot');
+    src: local('Mazzard H Bold Italic'), local('MazzardH-BoldItalic'),
+    url('font/MazzardH-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-BoldItalic.woff2') format('woff2'),
+    url('font/MazzardH-BoldItalic.woff') format('woff'),
+    url('font/MazzardH-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard L';
+    src: url('font/MazzardL-BlackItalic.eot');
+    src: local('Mazzard L Black Italic'), local('MazzardL-BlackItalic'),
+    url('font/MazzardL-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardL-BlackItalic.woff2') format('woff2'),
+    url('font/MazzardL-BlackItalic.woff') format('woff'),
+    url('font/MazzardL-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-ExtraLightItalic.eot');
+    src: local('Mazzard H ExtraLight Italic'), local('MazzardH-ExtraLightItalic'),
+    url('font/MazzardH-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-ExtraLightItalic.woff2') format('woff2'),
+    url('font/MazzardH-ExtraLightItalic.woff') format('woff'),
+    url('font/MazzardH-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Mazzard H';
+    src: url('font/MazzardH-ExtraBold.eot');
+    src: local('Mazzard H ExtraBold'), local('MazzardH-ExtraBold'),
+    url('font/MazzardH-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('font/MazzardH-ExtraBold.woff2') format('woff2'),
+    url('font/MazzardH-ExtraBold.woff') format('woff'),
+    url('font/MazzardH-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: Mazzard;
+    font-family: 'Mazzard M';
     font-style: normal;
     font-size: 14px;
     line-height: 17px;
@@ -16,6 +666,7 @@ html {
 }
 
 h2{
+    font-family: 'Mazzard-H-b';
     font-weight: bold;
     font-size: 96px;
     line-height: 113px;
@@ -41,25 +692,42 @@ header{
     background-color: #FFD008;
     min-height: 100px;
 }
+header.container{
+    padding: 0;
+}
 
 .logo{
     width: 161px;
     height: 69px;
 }
-
+.nav-link{
+    color: #000000 !important;
+    font-family: 'Mazzard-m-light';
+    font-weight: 300;
+    font-size: 14px;
+    text-align: justify;
+    text-transform: uppercase;
+}
 .nav-list{
     text-align: justify;
     text-transform: uppercase;
     color: #000000 !important;
 }
-.nav-list a:hover{
+.btn-bg-border{
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: black; stroke-width: 2; stroke-dasharray: 10 7'/></svg>");
 
 }
 .btn-border-calc{
-    border: 2px dashed #000000;
-    box-sizing: border-box;
+    font-family: "Mazzard M";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
     font-weight: bold;
     text-transform: uppercase;
+    border-radius: 0px;
+    height: 38px;
 }
 .nav-item {
     position: relative;
@@ -69,13 +737,16 @@ header{
     padding-right: 5px;
 }
 .inp{
+    margin-right: -5px;
     border: none;
     background-color: transparent;
+    font-family: "Mazzard M Black";
     font-weight: bold;
-    width: 32px;
+    width: 70px;
+    text-align: right;
 }
 sup{
-    margin-top: 8px;
+    margin-top: 10px;
 }
 .box-angle {
     position: absolute;
@@ -116,8 +787,10 @@ sup{
     background-color: white;
 }
 
+
+
 .carousel-inner .carousel-item{
-    height: 740px;
+    height: 820px;
 
 }
 .rectangle{
@@ -128,17 +801,18 @@ sup{
     box-sizing: border-box;
 }
 .slider-li li{
+    font-family: 'Mazzard-m-light';
     margin-top: 12px;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 36px;
     line-height: 43px;
     color: #FFFFFF;
     list-style: none;
-    padding: 0px 0 0px 38px;
+    padding: 0px 0 0px 48px;
     background-image: url("../img/utility/ul-square.PNG");
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 25px;
+    background-size: 32px;
 }
 .liner-splesh{
     width: 88%;
@@ -147,36 +821,33 @@ sup{
 
 .first-slider{
     height: 100%;
-    background: linear-gradient(270.05deg, rgba(0, 0, 0, 0.87) 3.08%, rgba(0, 0, 0, 0.529415) 43.45%,
+    background: linear-gradient(270.05deg
+    , rgba(0, 0, 0, 0.87) 3.08%, rgba(0, 0, 0, 0.529415) 43.45%,
     rgba(0, 0, 0, 0) 99.96%), url("../img/slider/slide-1.jpg");
-    background-size: cover;
 }
 .second-slider{
     height: 100%;
     background: linear-gradient(270deg, rgba(0, 0, 0, 0.76) 0%, rgba(45, 45, 45, 0.584699)
     49.48%, rgba(45, 45, 45, 0) 100%), url("../img/slider/slide-2.jpg") ;
-    background-size: cover;
 }
 .thort-slider{
     height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.87) 0%, rgba(0, 0, 0, 0.2) 65.62%,
     rgba(255, 255, 255, 0) 100%),url("../img/slider/slide-3.jpg");
-    background-size: cover;
 }
 
 .rectangle-br{
     height: 200px;
     width: 200px;
-    border-width: 2px;
-    border-style: dashed;
-    border-color: #FFD008;
+    background-repeat: no-repeat;
+    background-image: url("../svg/rectangle.svg");
+
 
 }
 .slider-logo{
 
-    width: 290px;
-    height: 100.63px;
-    padding: 0px;
+    width: 244px;
+    height: 77px;
     background-color: white;
     opacity: 0.8;
 }
@@ -196,14 +867,16 @@ sup{
 
 /* --- */
 h3{
+    font-family: 'Mazzard M' !important;
     font-weight: 900;
     font-size: 64px;
     line-height: 76px;
     color: #000000;
-    text-shadow: -2px 1px 0px #FFD008;
+    text-shadow: -3px 2px 0px #FFD008;
     text-transform: uppercase;
 }
 p{
+    font-family: 'Mazzard-m-r';
     font-size: 24px;
     line-height: 120%;
 }
@@ -224,6 +897,7 @@ p{
 }
 
 .text-rig{
+    font-family: Mazzard-m-r;
     font-size: 16px;
     line-height: 120%;
     /* or 19px */
@@ -250,8 +924,8 @@ p{
     background-color: #DCDCDC;
 }
 .brow-st-1{
-    width: 548px;
-    height: 260px;
+    width: 350px;
+    height: 299px;
     filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.5));
     background-size: cover;
 }
@@ -273,7 +947,8 @@ p{
 
     text-transform: uppercase;
 
-    font-size: 16px;
+    font-family: Mazzard-m-black;
+    font-size: 18px;
     line-height: 21px;
 
 }
@@ -304,10 +979,12 @@ p{
     border-radius: 50px;
 }
 .slid-btn{
+    font-family: 'Mazzard M Black';
     padding: 2px 15px;
     border: none;
     text-align: center;
-    font-weight: bold;
+    font-weight: 900;
+    font-size: 13px;
     background: transparent;
 }
 .slid-btn:focus{
@@ -328,6 +1005,7 @@ p{
     margin-bottom: 4px;
 }
 .slid-text{
+    font-family: 'Mazzard M';
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
@@ -355,8 +1033,9 @@ p{
 }
 /* color */
 .title-color{
+    font-family: "Mazzard M";
     font-weight: 500;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 9px;
 }
 
@@ -407,6 +1086,12 @@ p{
     background-color: #BEBEBE;
 }
 /* *** */
+.slid-center-text{
+    font-family: "Mazzard M Black";
+    font-weight: 900 !important;
+    font-size: 18px;
+    line-height: 21px;
+}
 .slid-btn-container{
     background-color: #FFFFFF;
     border-radius: 50px;
@@ -602,7 +1287,7 @@ footer .li{
     line-height: 57px;
     margin-left: 40px;
 }
-.modal-dialog input{
+.modal-dialog g{
     width: 456px;
     height: 50px;
     font-weight: 300;
