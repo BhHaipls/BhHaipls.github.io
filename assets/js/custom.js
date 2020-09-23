@@ -56,6 +56,19 @@ window.onload = function (){
         });
     }
 
+    let colorContainer = document.getElementsByClassName("color-container");
+    for(let i = 0; i < colorContainer.length;i++){
+        colorContainer[i].addEventListener('click', function (event){
+            let ele = event.target;
+            let parNode = ele.parentNode;
+            let parNode2 = parNode.parentNode;
+            let inContainer = parNode2.getElementsByClassName("viewCheck");
+            for(let j = 0; j < inContainer.length;j++){
+                inContainer[j].classList.remove("viewCheck");
+            }
+            ele.classList.add("viewCheck");
+        })
+    }
 
     let sliders = document.getElementsByClassName("slid-btn");
     for(let i = 0; i<sliders.length;i++){

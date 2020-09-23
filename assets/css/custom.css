@@ -1382,3 +1382,17 @@ footer .li{
     line-height: 28px;
 }
 
+
+.viewCheck{
+    background: linear-gradient(0deg, rgba(255, 199, 0, 0.56), rgba(255, 199, 0, 0.56)) ;
+}
+.viewCheck::before{
+    content: ".......";
+    color: transparent;
+    background-repeat: no-repeat;
+    width: 13px;
+    text-align: center;
+    height: 13px;
+    position: relative;
+    background-image: url("../svg/galka.svg") ;
+}
