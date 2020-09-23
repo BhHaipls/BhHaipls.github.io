@@ -184,3 +184,27 @@ anchors.forEach(function(item) {
         }, animationTime / framesCount);
     });
 });
+
+var numberCardSt = 0;
+function nextCard(){
+    let numbs = document.getElementsByClassName("sli");
+    if(this.numberCardSt < (numbs.length - 1)){
+        this.numberCardSt = Number(this.numberCardSt)+1;
+
+    }
+    else{
+        return;
+    }
+    if(numbs.length -3 > this.numberCardSt){
+        for(let i = 0; i < this.numberCardSt; i++){
+            numbs[i].classList.add("hide");
+        }
+        for(let i = this.numberCardSt; i < this.numberCardSt+3;i++){
+            numbs[i].classList.remove("hide");
+        }
+        for(let i = this.numberCardSt + 3; i < numbs.length; i++){
+            numbs[i].classList.add("hide");
+        }
+    }
+
+}
