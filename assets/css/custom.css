@@ -1381,7 +1381,14 @@ footer .li{
     font-size: 20px;
     line-height: 28px;
 }
-
+.slid-btn-sub-text{
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 8px;
+    text-align: center;
+}
 
 .viewCheck{
     background: linear-gradient(0deg, rgba(255, 199, 0, 0.56), rgba(255, 199, 0, 0.56)) ;

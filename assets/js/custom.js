@@ -74,21 +74,22 @@ window.onload = function (){
     for(let i = 0; i<sliders.length;i++){
         sliders[i].addEventListener("click", function (event){
            let ele = event.target;
-           let par = ele.parentNode;
-           for(let j =0; j< par.children.length; j++){
-               let innEle = par.children[j];
-               if(!innEle.classList.contains("slid-btn-multi")){
-                   innEle.classList.remove("slid-active");
-                   innEle.classList.add("slid-not-active");
+           if(ele.classList.contains("slid-btn")) {
+               let par = ele.parentNode.getElementsByClassName("slid-btn");
+               for (let j = 0; j < par.length; j++) {
+                   let innEle = par[j];
+                   if (!innEle.classList.contains("slid-btn-multi")) {
+                       innEle.classList.remove("slid-active");
+                       innEle.classList.add("slid-not-active");
+                   }
                }
-           }
-           if(ele.classList.contains("slid-active")){
-               ele.classList.add("slid-not-active");
-               ele.classList.remove("slid-active");
-           }
-           else{
-               ele.classList.remove("slid-not-active");
-               ele.classList.add("slid-active");
+               if (ele.classList.contains("slid-active")) {
+                   ele.classList.add("slid-not-active");
+                   ele.classList.remove("slid-active");
+               } else {
+                   ele.classList.remove("slid-not-active");
+                   ele.classList.add("slid-active");
+               }
            }
 
         });
