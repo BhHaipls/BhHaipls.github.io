@@ -1445,3 +1445,22 @@ footer .li{
     position: relative;
     background-image: url("../svg/galka.svg") ;
 }
+
+
+
+.back_to_top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    display: none;
+}
+
+
+.back_to_top-show {
+    display: block;
+}
