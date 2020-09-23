@@ -64,11 +64,20 @@ window.onload = function (){
            let par = ele.parentNode;
            for(let j =0; j< par.children.length; j++){
                let innEle = par.children[j];
-               innEle.classList.remove("slid-active");
-               innEle.classList.add("slid-not-active");
-            }
-            ele.classList.remove("slid-not-active");
-            ele.classList.add("slid-active");
+               if(!innEle.classList.contains("slid-btn-multi")){
+                   innEle.classList.remove("slid-active");
+                   innEle.classList.add("slid-not-active");
+               }
+           }
+           if(ele.classList.contains("slid-active")){
+               ele.classList.add("slid-not-active");
+               ele.classList.remove("slid-active");
+           }
+           else{
+               ele.classList.remove("slid-not-active");
+               ele.classList.add("slid-active");
+           }
+
         });
     }
 }
@@ -107,7 +116,7 @@ function  addValueToText(ele){
 }
 
 
-var lastColorRolet = "assets/img/color/brama/коричневий.png";
+var lastColorRolet = "assets/img/color/rolet/коричневий.png";
 var isSchemaRolet = true;
 function viewRolet(args){
     let ele = document.getElementById("rolet-st");
