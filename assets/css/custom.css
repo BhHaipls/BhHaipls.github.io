@@ -1432,7 +1432,6 @@ footer .li{
     line-height: 8px;
     text-align: center;
 }
-
 .viewCheck{
     background: linear-gradient(0deg, rgba(255, 199, 0, 0.56), rgba(255, 199, 0, 0.56)) ;
 }
@@ -1485,4 +1484,155 @@ footer .li{
     font-weight: 300;
     font-size: 24px;
     line-height: 28px;;
+}
+
+.tab-btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tab-btn{
+    font-family: "Mazzard M";
+    width: 190px;
+    height: 71px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin-right: 15px;
+    color: #000000;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    border: none;
+    background-image: url("../svg/rect.svg");
+
+}
+.tab-btn-container .active{
+    background: linear-gradient(262.11deg, #FFD008 2.08%, #FF7A00 97.78%);
+}
+
+.avtom-container{
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 520px;
+    height: 180px;
+    padding: 5px;
+}
+.avtomatik-logo{
+    width: 120px;
+    height: 124px;
+
+    border: 1px dashed rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.avtomatik-tit{
+    width: 123px;
+    height: 33px;
+}
+.avtomatik-title{
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+
+}
+.avtomatik-title .mini{
+
+    font-family: Mazzard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 275;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 5px;
+
+}
+.avtom-flag{
+    width: 24px;
+    height: 16px;
+}
+.avtom-title-flag{
+    font-family: "Mazzard M";
+    font-style: normal;
+    font-weight: 275;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: center;
+    opacity: 0.8;
+    color: rgba(0, 0, 0, 0.8);
+
+}
+.avtom-price{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+
+    font-family: "Mazzard H";
+    color: #000000;
+    background-image: url("../svg/rect.svg");
+    width: 47px;
+    height: 19px;
+    border-radius: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avtom-list{
+    list-style: none;
+    font-family: Mazzard M;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    padding: 0;
+}
+.avtom-list li{
+}
+.avtom-list li .right{
+    color: #4A4A4A;
+}
+
+.avtom-left-btn{
+    font-family: "Mazzard M";
+    width: 120px;
+    height: 18px;
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    border: none;
+    color: #000000;
+    background: #F1F1F1;
+    border-radius: 5px;
+}
+.avtom-right-btn{
+    width: 98px;
+    height: 18px;
+
+    background: linear-gradient(268.38deg, #FF6B00 3.73%, #FFCE00 95.88%);
+    border-radius: 60px;
+    border: none;
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #FFFFFF;
 }

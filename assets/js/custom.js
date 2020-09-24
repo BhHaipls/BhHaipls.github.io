@@ -21,6 +21,16 @@ var viewRoletSrs={
 }
 var colorBrama = 2;
 window.onload = function (){
+    let btnss = document.getElementsByClassName("tab-btn");
+    for(let i =0; i < btnss.length; i++){
+        btnss[i].addEventListener("click", function (event){
+            for(let j =0; j< btnss.length; j++){
+                btnss[j].classList.remove("active");
+            }
+            let e = event.target;
+            e.classList.add("active");
+        });
+    }
     let navs = document.getElementsByClassName("nav-link");
 
     for(let i = 0 ; i< navs.length; i++){
