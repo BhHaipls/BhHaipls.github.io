@@ -709,7 +709,7 @@ header.container{
     font-family: 'Mazzard-m-light';
     font-weight: 300;
     font-size: 14px;
-    text-align: justify;
+    text-align: center;
     text-transform: uppercase;
 }
 .nav-list{
@@ -1149,8 +1149,8 @@ p{
 }
 
 .card{
-    width: 165px;
-    height: 400px;
+    max-width: 280px !important;
+    height: 420px;
     background-color: #FFFFFF;
     border-color: #FFD008;
     border-style: dashed;
@@ -1238,16 +1238,45 @@ p{
 .delivery-img{
     height: 60px;
     background-repeat: no-repeat;
-    background-size: 100% auto;
 }
 .builder{
     width: 566px;
-    height: 887px;
-    right: 0;
-    bottom: -150px;
-    right: -50px;
+    height: auto;
+    bottom: -115px;
+    right: -75px;
+}
+.courer{
+    width: 723px;
+    height: auto;
+    right: -135px;
+    bottom: -176px;
 }
 
+@media (max-width:1200px ) {
+    .builder{
+        width: 420px;
+        right: -75px;
+    }
+    .courer{
+        width: 560px;
+        right: -80px;
+        bottom: -120px;
+    }
+}
+@media (max-width: 828px){
+    .courer{
+       display: none;
+    }
+}
+@media (max-width:943px ) {
+    .builder{
+        width: 270px;
+        right: -75px;
+    }
+    .courer{
+        width: 390px;
+    }
+}
 .bold-h4 h4{
     font-weight: 900;
 }
@@ -1268,12 +1297,6 @@ p{
     border-radius: 50%;
     background: linear-gradient(180deg, #FFD008 0%, #FF7A00 100%);
     font-size: 36px;
-}
-.courer{
-    width: 723px;
-    height: 914px;
-    right: -135px;
-    bottom: -176px;
 }
 
 .img-map {
@@ -1296,7 +1319,7 @@ p{
 }
 footer{
     background: linear-gradient(268.34deg, #3F3F3F 0%, #161616 100%);
-    height: 245px;
+    height: 100%;
     z-index: 100;
     position: relative;
 }
@@ -1446,7 +1469,16 @@ footer .li{
     background-image: url("../svg/galka.svg") ;
 }
 
+.wait-dz{
+    font-family: Mazzard;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
 
+    color: #000000;
+}
 
 .back_to_top {
     position: fixed;
@@ -1473,7 +1505,7 @@ footer .li{
     font-size: 48px;
     line-height: 57px;
 }
-.modal-content input{
+.modal-content input,.modal-content textarea{
     width: 456px;
     height: 58px;
     font-family: "Mazzard M";
@@ -1486,11 +1518,6 @@ footer .li{
     line-height: 28px;;
 }
 
-.tab-btn-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 .tab-btn{
     font-family: "Mazzard M";
     width: 190px;
@@ -1635,4 +1662,62 @@ footer .li{
     line-height: 12px;
 
     color: #FFFFFF;
+}
+
+
+.get-img-btn{
+    width: 163px;
+    height: 22px;
+    border-radius: 60px;
+    border: 1px solid;
+
+    border-image-source: linear-gradient(92.87deg, #FFE472 17.37%, #FF3D00 52.39%);
+
+    font-family: "Mazzard M";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #000000;
+}
+.inp-sm .label{
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    margin-left: 5px;
+}
+.inp-sm textarea{
+    width: 597px;
+    height: 132px;
+    border-radius: 20px;
+}
+.inp-sm input{
+    width: 239px;
+    height: 30px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+
+    background: #E4E4E4;
+    border-radius: 60px;
+}
+.pick-img{
+    width: 153px;
+    height: 153px;
+    left: 586px;
+    top: 141px;
+    background: #F2F2F2;
+    border-radius: 9px;
+    background-repeat: no-repeat;
+    background-image: url("../svg/rect.svg");
+
+}
+
+
+
+@media(max-height: 625px){
+    .brow-st-1{
+        width: auto;
+    }
 }

@@ -246,3 +246,19 @@ function nextCard(){
     window.addEventListener('scroll', trackScroll);
     goTopBtn.addEventListener('click', backToTop);
 })();
+
+var isPositive = true;
+function  changeNePo(res){
+    let pos = document.getElementById("positive");
+    let neg = document.getElementById("negativ");
+    if(res && !this.isPositive){
+        pos.classList.remove("hide");
+        neg.classList.add("hide");
+    }
+    else if(!res && isPositive){
+
+        neg.classList.remove("hide");
+        pos.classList.add("hide");
+    }
+    this.isPositive = res;
+}
