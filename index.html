@@ -9,14 +9,17 @@
    </head>
 <body>
 <section class="type-slider" style="opacity: 1;">
+	<div class="background"></div>
 	<div class="wrapper no-wrapper">
 		<div class="slider" id="slider" style="opacity: 1;">
+
 			<div class="slides">
 				<div class="slide active" >
 					<div class="slide-inner">
 						<div class="slide-image">
-							<iframe id="video_0" class="slider-youtube-video" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/FxN8-ZBCWhs?autoplay=1&mute=1&enablejsapi=1&amp;widgetid=1"></iframe>
+							<div class="g__image" > <img id="sl-banner-1" src="https://rixos.ua/wp-content/uploads/2019/08/DJI_0003-sharpen-1920x1078.jpg" alt=""></div>
 
+							<iframe id="video_0" class="slider-youtube-video" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/FxN8-ZBCWhs?autoplay=1&amp;loop=1&amp;mute=1&amp;enablejsapi=1&amp;widgetid=1&playlist=FxN8-ZBCWhs"></iframe>
 						</div>
 
 					</div>
@@ -52,7 +55,7 @@
 							</div>
 						</div>
 				</div>
-				<div class="slide" >
+				<div class="slide" style="display: none" >
 					<div class="slide-inner">
 						<div class="slide-image">
 							<img src="https://rixos.ua/wp-content/uploads/2019/09/2019-07-11_kor_1864-2-1920x1278.jpg" alt="Rjvgktrc Hbrcjc Ghbrfhgfnmt">						</div>
@@ -89,6 +92,19 @@
 						</div>
 					</div>
 				</div>
+				<div class="slide" style="display: none">
+					<div class="slide-inner">
+						<div class="slide-image" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+							<div class="g__image"> <img src="https://rixos.ua/wp-content/uploads/2019/09/dji_0033-2-finished-1920x1078.jpg" alt=""></div></div><div class="slider-content-outer">
+						<div class="slider-content" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+							<div class="slider-content-flex-container flex middle center">
+								<div class="slider-content-flex-container-inner">
+									<div class="el-title">
+										<div class="g__title type-4 color-light divided-text-outer"><span style="display: block; position: relative; overflow: hidden;"><span style="display: inline-block; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">Ласкаво просимо в</span></span> <span style="display: block; position: relative; overflow: hidden;"><span style="display: inline-block; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">«Rixos-Prykarpattya»!</span></span> </div></div><div class="play-button-outer" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+									<div class="g__play_button flex middle video-pop-up-button" data-video-src="FxN8-ZBCWhs">
+										<div class="g__play_button-circle"> <svg viewBox="0 0 120 120" version="1.1" xmlns="https://www.w3.org/2000/svg"> <circle cx="60" cy="60" r="50"></circle> <circle cx="60" cy="60" r="50"></circle> </svg></div><div class="g__play_button-inner-circle">
+										<div class="play"> <svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="https://www.w3.org/2000/svg"> <path d="M0.822436 0.0767977C0.910908 0.0266636 1.00823 0.00012207 1.10849 0.00012207C1.20581 0.00012207 1.30608 0.0266636 1.39455 0.0767977L8.18034 5.00763C8.35729 5.1079 8.4664 5.29664 8.4664 5.50012C8.4664 5.70361 8.35729 5.89235 8.18034 5.99262L1.3916 10.9234C1.21466 11.0237 0.99938 11.0237 0.822436 10.9234C0.645492 10.8202 0.536377 10.6344 0.536377 10.431V0.569291C0.536377 0.365806 0.645492 0.177066 0.822436 0.0767977Z" fill="black"></path> </svg></div><div class="g__play_button-el-text">
+										<div class="g__text type-2 var-a color-light"> Відтворити відео</div></div></div></div></div></div></div></div></div></div></div>
 			</div>
 			<div class="icon slider-arrow left">
 				<svg width="26" height="96" viewBox="0 0 26 96" fill="none" xmlns="https://www.w3.org/2000/svg">
@@ -103,13 +119,14 @@
 			<div class="pager flex center wrap">
 				      <div class="pager-dot active"></div>
 	                  <div class="pager-dot"></div>
+	                  <div class="pager-dot"></div>
 			</div>
 		</div>
 	</div>
 
 </section>
 
-<div class="pop-up video-pop-up" id="video_banner" style="pointer-events: auto; display: none; visibility: visible;">
+<div class="pop-up video-pop-up" id="video_banner" style="pointer-events: auto; display: none; visibility: hidden;">
 	<div class="background" style="opacity: 1;"></div>
 	<div class="pop-up-inner flex center align-items-flex-start">
 		<div class="close-button" id="close-button-video" style="opacity: 1;">

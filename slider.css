@@ -70,7 +70,15 @@ section.type-slider{
 }
 
 
-
+.background {
+    margin: 0 auto;
+    left: -100%;
+    right: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
 
 section.type-slider .slider {
     height: calc(100vh - 96px);
@@ -154,11 +162,6 @@ section.type-slider .slide {
     left: 0;
     z-index: 33;
 }
-section.type-slider .slide .last{
-    z-index: 40;
-    display: block !important;
-    opacity: 1 !important;
-}
 
 section.type-slider .slides .active {
     z-index: 44;
@@ -166,13 +169,10 @@ section.type-slider .slides .active {
     opacity: 1 !important;
 }
 section.type-slider .animationLeft {
-    z-index: 44;
-    display: block !important;
     animation: 1.5s sliderLeft;
 }
+
 section.type-slider .animationRight {
-    z-index: 44;
-    display: block !important;
     animation: 1.5s sliderRight;
 }
 @keyframes scale {
@@ -200,6 +200,7 @@ section.type-slider .animationRight {
         width: 100%;
     }
 }
+
 @keyframes sliderLeft {
     from{
         margin-left: 100%;
@@ -209,10 +210,10 @@ section.type-slider .animationRight {
     }
 }
 section.type-slider .slides .active .slider-content-flex-container-inner {
-    animation: 1.5s blockUp;
+    animation: 1.8s blockUp;
 }
 section.type-slider .slides .active .slide-image {
-    animation: 1.5s scale;
+    animation: 1.8s scale;
 }
 
 section.type-slider .slides .leftIn {
@@ -267,30 +268,8 @@ section.type-slider .slider .slide-image:after {
     top: 0px;
     left: 0px;
 }
-
-section.type-slider .slider .slide .slider-youtube-video {
-    display: block;
-    width: 100vw;
-    height: calc(100vw / 1.77);
-    margin: auto;
-    position: absolute;
-    top: -100%;
-    right: -100%;
-    bottom: -100%;
-    left: -100%;
-}
 .g__image {
     position: relative;
-    animation: 1.5s slowHiden;
-}
-
-@keyframes slowHiden {
-    from{
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
 }
 
         section.type-slider .g__image {
@@ -596,7 +575,7 @@ section.type-slider .slider .slide .slider-youtube-video {
 
 .pop-up {
     width: 100%;
-    height: 100vh;
+    height: auto;
 
     position: fixed;
     top: 0px;
