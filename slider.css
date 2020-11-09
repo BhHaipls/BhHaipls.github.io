@@ -547,17 +547,11 @@ section.type-slider .slider .slide img {
         display: none;
     }
 }
-@media (max-width: 1024px) {
-    section.type-slider .slider-arrow {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-}
 
 
 section.type-slider .slider .slide .slider-youtube-video {
     display: block;
-    width: 100vw;
+    width: 100%;
     height: calc(100vw / 1.77);
     margin: auto;
     position: absolute;
@@ -567,7 +561,19 @@ section.type-slider .slider .slide .slider-youtube-video {
     left: -100%;
 }
 
+@media (max-width: 1024px) {
+    section.type-slider .slider-arrow {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 
+}
+@media (max-width: 720px) {
+    .slider-youtube-video{
+        display: none;
+        visibility: hidden;
+    }
+}
 /*
 
  Pop up
@@ -575,7 +581,7 @@ section.type-slider .slider .slide .slider-youtube-video {
 
 .pop-up {
     width: 100%;
-    height: auto;
+    height: 100%;
 
     position: fixed;
     top: 0px;
@@ -606,13 +612,14 @@ html body .pop-up .close-button {
 
 .pop-up .close-button {
         position: absolute;
-        top: 30px;
-        right: 30px;
+        top: 45px;
+        right: 45px;
         z-index: 55;
         pointer-events: all;
     }
 
 .pop-up.video-pop-up .content {
+    margin: auto;
     max-width: 1134px;
     height: 70vw;
     max-height: 640px;
@@ -640,6 +647,11 @@ html body .g__close_button.type-1 {
 }
 .g__close_button {
     cursor: pointer;
+    transition-duration: 0.5s;
+}
+.g__close_button :hover {
+    opacity: 0.8;
+    scale(1.2);
 }
 
 .g__close_button.type-1 .g__close_button-cross {

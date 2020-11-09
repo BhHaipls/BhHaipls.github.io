@@ -15,7 +15,7 @@ window.onload = function()
             let active = document.getElementById('slider').getElementsByClassName('pager-dot active')[0];
             let last_number = 0;
             for(let i =0; i< elements.length; i++){
-                if(element[i].classList.contains("active")){
+                if(elements[i].classList.contains("active")){
                     last_number = i;
                     break;
                 }
@@ -39,7 +39,7 @@ window.onload = function()
             elements = document.getElementById('slider').getElementsByClassName('pager-dot');
             let sli_number = 0;
             for(let i =0; i< elements.length; i++){
-                if(element[i].classList.contains("active")){
+                if(elements[i].classList.contains("active")){
                     sli_number = i;
                     break;
                 }
@@ -72,7 +72,7 @@ window.onload = function()
 
 	  let sli_number = 0;
 	  for(let i =0; i< elements.length; i++){
-	  	if(element[i].classList.contains("active")){
+	  	if(elements[i].classList.contains("active")){
 	  		sli_number = i;
 	  		break;
 		}
@@ -118,7 +118,7 @@ window.onload = function()
 
 	  let sli_number = 0;
 	  for(let i =0; i< elements.length; i++){
-		  if(element[i].classList.contains("active")){
+		  if(elements[i].classList.contains("active")){
 			  sli_number = i;
 			  break;
 		  }
@@ -216,7 +216,7 @@ function handleTouchMove(evt) {
 
             let sli_number = 0;
             for(let i =0; i< elements.length; i++){
-                if(element[i].classList.contains("active")){
+                if(elements[i].classList.contains("active")){
                     sli_number = i;
                     break;
                 }
@@ -261,7 +261,7 @@ function handleTouchMove(evt) {
 
             let sli_number = 0;
             for(let i =0; i< elements.length; i++){
-                if(element[i].classList.contains("active")){
+                if(elements[i].classList.contains("active")){
                     sli_number = i;
                     break;
                 }
